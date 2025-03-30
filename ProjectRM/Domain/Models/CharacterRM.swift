@@ -16,4 +16,5 @@ struct CharacterRM: Identifiable {
     let location: String
     let image: String
     let episode: [String]
+    let created: String
 }

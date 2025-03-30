@@ -22,7 +22,8 @@ struct SplashView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 300, height: 300)
-                    ProgressView("Cargando personajes...")
+                    ProgressView("Loading characters")
+                        .font(.title2)
                         .foregroundColor(.black)
                         .padding(.top, 20)
                         
@@ -39,6 +40,13 @@ struct SplashView: View {
             }
         }
         .preferredColorScheme(.light)
+        .alert("Error", isPresented: .constant(viewModel.errorMessage != nil)) {
+            Button("OK") {
+                viewModel.errorMessage = nil
+            }
+        } message: {
+            Text(viewModel.errorMessage ?? "")
+        }
     }
 }
 

@@ -17,7 +17,8 @@ extension CharacterDTO {
             origin: origin.name,
             location: location.name,
             image: image,
-            episode: episode
+            episode: episode,
+            created: created
         )
     }
 }

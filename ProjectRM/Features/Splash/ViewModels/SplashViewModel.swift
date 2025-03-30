@@ -13,6 +13,7 @@ class SplashViewModel: ObservableObject {
     private let characterRepository: CharacterRepositoryImpl
     private let imagePreloader: ImagePreloader
     @Published var characters: [CharacterRM] = []
+    @Published var errorMessage: String? = nil
 
     init(
         preloadImagesUseCase: PreloadCharacterImagesUseCase = PreloadCharacterImagesUseCaseImpl(),
@@ -31,7 +32,9 @@ class SplashViewModel: ObservableObject {
             let imageUrls = allCharacters.map { $0.image }
             await imagePreloader.preload(from: imageUrls)
         } catch {
-            print("Error preloading images: \(error)")
+            await MainActor.run {
+                self.errorMessage = "The characters could not be loaded. Please try again later."
+            }
         }
     }
 }

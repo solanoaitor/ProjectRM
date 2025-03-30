@@ -12,17 +12,22 @@ class CharacterRepositoryImpl: GetCharactersUseCase {
         var allCharacters: [CharacterRM] = []
         var nextPageURL: URL? = URL(string: "https://rickandmortyapi.com/api/character")
 
-        while let url = nextPageURL {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            let decoded = try JSONDecoder().decode(CharacterResponseDTO.self, from: data)
-            let characters = decoded.results.map { $0.toDomain() }
-            allCharacters.append(contentsOf: characters)
+        do {
+            while let url = nextPageURL {
+                let (data, _) = try await URLSession.shared.data(from: url)
+                let decoded = try JSONDecoder().decode(CharacterResponseDTO.self, from: data)
+                let characters = decoded.results.map { $0.toDomain() }
+                allCharacters.append(contentsOf: characters)
 
-            if let next = decoded.info.next {
-                nextPageURL = URL(string: next)
-            } else {
-                nextPageURL = nil
+                if let next = decoded.info.next {
+                    nextPageURL = URL(string: next)
+                } else {
+                    nextPageURL = nil
+                }
             }
+        } catch {
+            print("Error fetching characters: \(error.localizedDescription)")
+            throw error
         }
 
         return allCharacters

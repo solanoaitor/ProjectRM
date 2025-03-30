@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A92F21E52D94B364005E7E31 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F21E32D94B364005E7E31 /* SplashView.swift */; };
 		A92F21E62D94B364005E7E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92F21E12D94B364005E7E31 /* Assets.xcassets */; };
+		A93408F82D989D9C00D23C99 /* EpisodesSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93408F72D989D9A00D23C99 /* EpisodesSheetView.swift */; };
+		A93408FA2D98A0F700D23C99 /* EpisodeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93408F92D98A0F700D23C99 /* EpisodeDTO.swift */; };
+		A93408FC2D98B21A00D23C99 /* CharacterInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93408FB2D98B21900D23C99 /* CharacterInfoLabel.swift */; };
 		A93B41402D970CB5009BFCD0 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B413F2D970CB4009BFCD0 /* CharacterViewModel.swift */; };
 		A93B41432D970CFA009BFCD0 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B41422D970CEC009BFCD0 /* CharacterListView.swift */; };
 		A93B41442D971248009BFCD0 /* CharacterRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B41342D970AED009BFCD0 /* CharacterRM.swift */; };
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		A92F21E12D94B364005E7E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92F21E32D94B364005E7E31 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		A93408F72D989D9A00D23C99 /* EpisodesSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesSheetView.swift; sourceTree = "<group>"; };
+		A93408F92D98A0F700D23C99 /* EpisodeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDTO.swift; sourceTree = "<group>"; };
+		A93408FB2D98B21900D23C99 /* CharacterInfoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoLabel.swift; sourceTree = "<group>"; };
 		A93B41342D970AED009BFCD0 /* CharacterRM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRM.swift; sourceTree = "<group>"; };
 		A93B41372D970B1B009BFCD0 /* GetCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharactersUseCase.swift; sourceTree = "<group>"; };
 		A93B413B2D970B9B009BFCD0 /* CharacterDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDTO.swift; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 		A93B41382D970B67009BFCD0 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
+				A93408F92D98A0F700D23C99 /* EpisodeDTO.swift */,
 				A93B413B2D970B9B009BFCD0 /* CharacterDTO.swift */,
 			);
 			path = DTOs;
@@ -203,6 +210,7 @@
 		A93B41412D970CDD009BFCD0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A93408F72D989D9A00D23C99 /* EpisodesSheetView.swift */,
 				A93B416F2D976490009BFCD0 /* CharacterDetailView.swift */,
 				A93B41422D970CEC009BFCD0 /* CharacterListView.swift */,
 			);
@@ -237,6 +245,7 @@
 		A93B41582D971CAF009BFCD0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A93408FB2D98B21900D23C99 /* CharacterInfoLabel.swift */,
 				A93B415B2D971D05009BFCD0 /* CachedAsyncImage.swift */,
 			);
 			path = Components;
@@ -391,10 +400,13 @@
 				A93B41452D971250009BFCD0 /* GetCharactersUseCase.swift in Sources */,
 				A93B41512D9715AA009BFCD0 /* SplashViewModel.swift in Sources */,
 				A93B414D2D971530009BFCD0 /* ImagePreloader.swift in Sources */,
+				A93408FC2D98B21A00D23C99 /* CharacterInfoLabel.swift in Sources */,
 				A92F21E52D94B364005E7E31 /* SplashView.swift in Sources */,
 				A93B414A2D9714E6009BFCD0 /* PreloadCharacterImagesUseCase.swift in Sources */,
 				A93B41572D971B9F009BFCD0 /* ImageCache.swift in Sources */,
+				A93408FA2D98A0F700D23C99 /* EpisodeDTO.swift in Sources */,
 				A93B415C2D971D08009BFCD0 /* CachedAsyncImage.swift in Sources */,
+				A93408F82D989D9C00D23C99 /* EpisodesSheetView.swift in Sources */,
 				A93B414F2D971574009BFCD0 /* PreloadCharacterImagesUseCaseImpl.swift in Sources */,
 				A93B41702D976493009BFCD0 /* CharacterDetailView.swift in Sources */,
 			);

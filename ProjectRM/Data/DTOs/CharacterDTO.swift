@@ -16,6 +16,7 @@ struct CharacterDTO: Decodable {
     let location: LocationDTO
     let image: String
     let episode: [String]
+    let created: String
 }
 
 struct CharacterResponseDTO: Decodable {
