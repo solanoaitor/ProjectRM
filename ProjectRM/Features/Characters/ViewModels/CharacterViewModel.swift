@@ -9,7 +9,6 @@ import Foundation
 
 struct CharacterState {
     var characters: [CharacterRM] = []
-    // otras propiedades como loading, error, etc.
 }
 
 
@@ -18,6 +17,7 @@ class CharacterViewModel: ObservableObject {
     @Published var state = CharacterState()
     @Published var characters: [CharacterRM] = []
     @Published var isLoading = false
+    @Published var searchText: String = ""
 
     private let getCharactersUseCase: GetCharactersUseCase
 
@@ -40,5 +40,19 @@ class CharacterViewModel: ObservableObject {
             print("Error: \(error)")
         }
         isLoading = false
+    }
+    
+    var filteredCharacters: [CharacterRM] {
+        guard !searchText.isEmpty else { return characters }
+        return characters.filter {
+            $0.name.lowercased().contains(searchText.lowercased())
+        }
+    }
+    
+    func sortedFilteredCharacters(ascending: Bool) -> [CharacterRM] {
+        let result = filteredCharacters
+        return result.sorted {
+            ascending ? $0.name < $1.name : $0.name > $1.name
+        }
     }
 }

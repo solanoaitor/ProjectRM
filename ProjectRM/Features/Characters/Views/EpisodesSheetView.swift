@@ -14,17 +14,28 @@ struct EpisodesSheetView: View {
 
     var body: some View {
         NavigationStack {
-            List(episodes) { episode in
-                VStack(alignment: .leading) {
-                    Text(episode.name)
+            VStack(alignment: .leading, spacing: 8) {
+                HStack {
+                    Text("Episodes")
                         .font(.headline)
-                    Text(episode.episode)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
+                        .padding(.top, 12)
+                    Spacer()
                 }
+
+                Divider()
+
+                List(episodes) { episode in
+                    VStack(alignment: .leading) {
+                        Text(episode.name)
+                            .font(.headline)
+                        Text(episode.episode)
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
+                }
+                .listStyle(.plain)
             }
-            .navigationTitle("Episodes")
-            .navigationBarTitleDisplayMode(.inline)
+            .padding(.horizontal)
         }
         .presentationDetents([.fraction(0.75)])
         .task {
@@ -45,7 +56,6 @@ struct EpisodesSheetView: View {
                 print("❌ Error loading episode from \(urlString): \(error)")
             }
         }
-        //order
         episodes = loadedEpisodes.sorted { $0.id < $1.id }
     }
 }

@@ -13,7 +13,7 @@ final class CharacterViewModelTests: XCTestCase {
     class MockGetCharactersUseCase: GetCharactersUseCase {
         func execute() async throws -> [CharacterRM] {
             return [
-                CharacterRM(id: 1, name: "Rick", status: "Alive", species: "Human", type: "", gender: "Male", origin: "Earth", location: "Earth", image: "", episode: [])
+                CharacterRM(id: 1, name: "Rick", status: "Alive", species: "Human", type: "", gender: "Male", origin: "Earth", location: "Earth", image: "", episode: [], created: "")
             ]
         }
     }

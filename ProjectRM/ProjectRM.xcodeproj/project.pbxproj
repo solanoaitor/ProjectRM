@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9204A732D99E71C004AD5D1 /* CharacterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9204A722D99E71B004AD5D1 /* CharacterRowView.swift */; };
+		A9204A752D99E926004AD5D1 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9204A742D99E91F004AD5D1 /* DateUtils.swift */; };
 		A92F21E52D94B364005E7E31 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F21E32D94B364005E7E31 /* SplashView.swift */; };
 		A92F21E62D94B364005E7E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92F21E12D94B364005E7E31 /* Assets.xcassets */; };
 		A93408F82D989D9C00D23C99 /* EpisodesSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93408F72D989D9A00D23C99 /* EpisodesSheetView.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9204A722D99E71B004AD5D1 /* CharacterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRowView.swift; sourceTree = "<group>"; };
+		A9204A742D99E91F004AD5D1 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		A92F21E12D94B364005E7E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92F21E32D94B364005E7E31 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		A93408F72D989D9A00D23C99 /* EpisodesSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesSheetView.swift; sourceTree = "<group>"; };
@@ -93,9 +97,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9204A762D99E92F004AD5D1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A9204A742D99E91F004AD5D1 /* DateUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		A92F21E72D94B780005E7E31 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A9204A762D99E92F004AD5D1 /* Utils */,
 				A93B414B2D971512009BFCD0 /* Network */,
 			);
 			path = Core;
@@ -245,6 +258,7 @@
 		A93B41582D971CAF009BFCD0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A9204A722D99E71B004AD5D1 /* CharacterRowView.swift */,
 				A93408FB2D98B21900D23C99 /* CharacterInfoLabel.swift */,
 				A93B415B2D971D05009BFCD0 /* CachedAsyncImage.swift */,
 			);
@@ -395,10 +409,12 @@
 				A93B41472D9712E2009BFCD0 /* CharacterMapper.swift in Sources */,
 				A93B41482D9712E7009BFCD0 /* CharacterDTO.swift in Sources */,
 				A93B41402D970CB5009BFCD0 /* CharacterViewModel.swift in Sources */,
+				A9204A752D99E926004AD5D1 /* DateUtils.swift in Sources */,
 				A93B41462D9712DD009BFCD0 /* CharacterRepositoryImpl.swift.swift in Sources */,
 				A93B41432D970CFA009BFCD0 /* CharacterListView.swift in Sources */,
 				A93B41452D971250009BFCD0 /* GetCharactersUseCase.swift in Sources */,
 				A93B41512D9715AA009BFCD0 /* SplashViewModel.swift in Sources */,
+				A9204A732D99E71C004AD5D1 /* CharacterRowView.swift in Sources */,
 				A93B414D2D971530009BFCD0 /* ImagePreloader.swift in Sources */,
 				A93408FC2D98B21A00D23C99 /* CharacterInfoLabel.swift in Sources */,
 				A92F21E52D94B364005E7E31 /* SplashView.swift in Sources */,
