@@ -53,7 +53,7 @@ struct EpisodesSheetView: View {
                 let episode = try JSONDecoder().decode(EpisodeDTO.self, from: data)
                 loadedEpisodes.append(episode)
             } catch {
-                print("❌ Error loading episode from \(urlString): \(error)")
+                print("Error loading episode from \(urlString): \(error)")
             }
         }
         episodes = loadedEpisodes.sorted { $0.id < $1.id }

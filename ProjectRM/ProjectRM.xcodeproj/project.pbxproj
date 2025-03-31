@@ -18,7 +18,7 @@
 		A93B41432D970CFA009BFCD0 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B41422D970CEC009BFCD0 /* CharacterListView.swift */; };
 		A93B41442D971248009BFCD0 /* CharacterRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B41342D970AED009BFCD0 /* CharacterRM.swift */; };
 		A93B41452D971250009BFCD0 /* GetCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B41372D970B1B009BFCD0 /* GetCharactersUseCase.swift */; };
-		A93B41462D9712DD009BFCD0 /* CharacterRepositoryImpl.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B413D2D970BE8009BFCD0 /* CharacterRepositoryImpl.swift.swift */; };
+		A93B41462D9712DD009BFCD0 /* CharacterRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B413D2D970BE8009BFCD0 /* CharacterRepositoryImpl.swift */; };
 		A93B41472D9712E2009BFCD0 /* CharacterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B413C2D970BC3009BFCD0 /* CharacterMapper.swift */; };
 		A93B41482D9712E7009BFCD0 /* CharacterDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B413B2D970B9B009BFCD0 /* CharacterDTO.swift */; };
 		A93B414A2D9714E6009BFCD0 /* PreloadCharacterImagesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B41492D9714E4009BFCD0 /* PreloadCharacterImagesUseCase.swift */; };
@@ -52,7 +52,7 @@
 		A93B41372D970B1B009BFCD0 /* GetCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharactersUseCase.swift; sourceTree = "<group>"; };
 		A93B413B2D970B9B009BFCD0 /* CharacterDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDTO.swift; sourceTree = "<group>"; };
 		A93B413C2D970BC3009BFCD0 /* CharacterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMapper.swift; sourceTree = "<group>"; };
-		A93B413D2D970BE8009BFCD0 /* CharacterRepositoryImpl.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryImpl.swift.swift; sourceTree = "<group>"; };
+		A93B413D2D970BE8009BFCD0 /* CharacterRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryImpl.swift; sourceTree = "<group>"; };
 		A93B413F2D970CB4009BFCD0 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		A93B41422D970CEC009BFCD0 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
 		A93B41492D9714E4009BFCD0 /* PreloadCharacterImagesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadCharacterImagesUseCase.swift; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				A93B414E2D97156D009BFCD0 /* PreloadCharacterImagesUseCaseImpl.swift */,
-				A93B413D2D970BE8009BFCD0 /* CharacterRepositoryImpl.swift.swift */,
+				A93B413D2D970BE8009BFCD0 /* CharacterRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -410,7 +410,7 @@
 				A93B41482D9712E7009BFCD0 /* CharacterDTO.swift in Sources */,
 				A93B41402D970CB5009BFCD0 /* CharacterViewModel.swift in Sources */,
 				A9204A752D99E926004AD5D1 /* DateUtils.swift in Sources */,
-				A93B41462D9712DD009BFCD0 /* CharacterRepositoryImpl.swift.swift in Sources */,
+				A93B41462D9712DD009BFCD0 /* CharacterRepositoryImpl.swift in Sources */,
 				A93B41432D970CFA009BFCD0 /* CharacterListView.swift in Sources */,
 				A93B41452D971250009BFCD0 /* GetCharactersUseCase.swift in Sources */,
 				A93B41512D9715AA009BFCD0 /* SplashViewModel.swift in Sources */,
